@@ -71,15 +71,20 @@ DB_PASSWORD=
 JWT_SECRET=your_generated_secret_key
 ```
 🔗 3. Daftar Endpoint (Ringkas)
-POST	/api/register	Registrasi user baru		
+
+### POST	/api/register	Registrasi user baru		
 ```json{ "name": "John", "email": "john@example.com", "password": "123456" }	{ "message": "User registered successfully" }```
-POST	/api/login	Login user dan dapatkan token	
+
+### POST	/api/login	Login user dan dapatkan token	
 ```json{ "email": "john@example.com", "password": "123456" }	{ "access_token": "xxx", "token_type": "bearer" }```
-GET	/api/profile	Ambil data profil user	
+
+### GET	/api/profile	Ambil data profil user	
 ```json{ "name": "John", "email": "john@example.com" }```
-PUT	/api/profile	Update profil user	
+
+### PUT	/api/profile	Update profil user	
 ```json{ "name": "John Doe" } atau { "email": "johnnew@example.com" }	{ "message": "Profile updated", "profile": {...} }```
-POST	/api/logout	Logout & revoke token 
+
+### POST	/api/logout	Logout & revoke token 
 ```json{ "message": "Successfully logged out" }```
 
 🧪 4. Contoh cURL (Wajib)
